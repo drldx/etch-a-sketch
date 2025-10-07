@@ -7,11 +7,12 @@ function renderGrid(size){
   for(let i = 0; i < size * size; i++){
     const divs = document.createElement("div");
     divs.classList.add("square");
+    root.style.setProperty('--count', size);  
     container.appendChild(divs);
   }
 }
 
-renderGrid(16);
+renderGrid(99);
 
 function delGrid(){
   container.textContent = ''; 

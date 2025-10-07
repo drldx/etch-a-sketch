@@ -12,6 +12,7 @@ body{
   color: white;
   background: black;
   text-align: center;
+  margin-top: 15px;
 }
 
 h1{
@@ -20,23 +21,26 @@ h1{
 }
 .container{
   margin: 0 auto;
-  padding-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
-  height: 1000px;
+  width: 900px;
+  height: 900px;
+  border: 3px solid grey;
+  border-radius: 20px;
 }
 
 .square{
   width: calc(100%/ var(--count));
   height: calc(100%/ var(--count));
-  border: 1px solid grey;
+  border: 1px solid hsla(0, 0%, 100%, 0.125);
 }
 
 button{
   font-size: large;
   border: none;
-  color: green;
   padding: 5px;
   border-radius: 10px;
+  color: rgb(29, 240, 81);
+  background-color: rgb(66, 66, 66);
 }
