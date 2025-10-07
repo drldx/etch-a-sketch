@@ -1,3 +1,7 @@
+:root{
+  --count: 16;
+}
+
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -10,8 +14,13 @@ body{
   text-align: center;
 }
 
+h1{
+  display: inline;
+  padding: 50px;
+}
 .container{
   margin: 0 auto;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   width: 1000px;
@@ -19,9 +28,19 @@ body{
 }
 
 .square{
-  width: calc(100%/16);
-  height: calc(100%/16);
-  border: 2px solid grey;
-
+  width: calc(100%/ var(--count));
+  height: calc(100%/ var(--count));
+  border: 1px solid grey;
 }
 
+.square:hover{
+  background: white;
+}
+
+button{
+  font-size: large;
+  border: none;
+  color: green;
+  padding: 5px;
+  border-radius: 10px;
+}
