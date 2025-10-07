@@ -32,7 +32,12 @@ gridBtn.addEventListener("click", changeGrid);
 
 container.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("square")) {
-    e.target.style.background = "white";
+    e.target.style.background = randomColor();
   }
 });
 
+function randomColor(){
+  random = () => Math.floor(Math.random() * 256);
+  const rgb = `rgb(${random()}, ${random()}, ${random()}`
+  return rgb;
+}
