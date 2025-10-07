@@ -12,7 +12,7 @@ function renderGrid(size){
   }
 }
 
-renderGrid(99);
+renderGrid(20);
 
 function delGrid(){
   container.textContent = ''; 
