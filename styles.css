@@ -7,14 +7,21 @@
 body{
   color: white;
   background: black;
+  text-align: center;
 }
 
 .container{
-  border: 2px solid;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  height: 1000px;
 }
 
 .square{
-  width: 30px;
-  height: 30px;
-  border: 2px solid red;
+  width: calc(100%/16);
+  height: calc(100%/16);
+  border: 2px solid grey;
+
 }
+
